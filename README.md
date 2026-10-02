@@ -1,4 +1,4 @@
-# 💻 code-log
+# code-log
 
 just me, coding stuff.
 
