@@ -6,10 +6,11 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/", webHandler)
+	mux := http.NewServeMux()
+	mux.HandleFunc("/", webHandler)
+	fmt.Println("Server listening on port: 8080")
+	http.ListenAndServe(":8080", mux)
 
-	fmt.Println("Web server started on port: 8080")
-	http.ListenAndServe(":8080", nil)
 }
 
 func webHandler(w http.ResponseWriter, r *http.Request) {
