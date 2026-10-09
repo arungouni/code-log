@@ -14,5 +14,5 @@ func main() {
 }
 
 func webHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "Welcome to web GO server")
+	fmt.Fprintln(w, "Welcome to GO Web server")
 }
